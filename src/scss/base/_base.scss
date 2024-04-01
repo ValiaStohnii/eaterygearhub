@@ -1,0 +1,121 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+html,
+body {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
+.page {
+  height: var(--vh);
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-400);
+  font-style: normal;
+  font-size: clamp(16px, 1vw, 20px);
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--color-black);
+  background-color: var(--color-black);
+  font-optical-sizing: auto;
+
+  &__body {
+    min-width: 320px;
+    min-height: var(--vh);
+  }
+
+  &.open {
+    overflow: hidden;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  width: 100%;
+  max-width: var(--container-width);
+
+  &--contact-us {
+    padding: 86px var(--container-offset) 0;
+
+    @include media(tablet) {
+      padding: 30px var(--container-offset) 0;
+    }
+  }
+
+  &--power-black {
+    .request {
+      margin: 210px 0 90px;
+
+      @include media(tablet) {
+        margin: 30px 15px;
+      }
+    }
+  }
+
+  &--navigating-challenges,
+  &--photography-composition,
+  &--documenting-cultural,
+  &--start-finish,
+  &--choosing-right,
+  &--exploring-drone {
+    .request {
+      margin: 172px 0 90px;
+
+      @include media(tablet) {
+        margin: 30px 15px;
+      }
+    }
+  }
+}
+
+.site-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr auto;
+  min-height: var(--vh);
+}
+
+.main {
+  padding-top: var(--header-height);
+}
+
+#form-request {
+  position: fixed;
+  z-index: 10;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 0.2s;
+  inset: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-black);
+    opacity: 0.3;
+    inset: 0;
+  }
+
+  iframe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 30px auto;
+    border: none;
+    width: 90%;
+    height: calc(var(--vh) - 60px);
+    max-width: 980px;
+  }
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.main--sign-up {
+  padding: 90px 0 0;
+}

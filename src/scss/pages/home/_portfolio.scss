@@ -1,0 +1,92 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.portfolio {
+  $root: &;
+
+  &--home {
+    padding: 87px 0 84px;
+
+    h2 {
+      margin-bottom: 31px;
+    }
+
+    p {
+      width: 100%;
+      max-width: 561px;
+      text-transform: capitalize;
+    }
+
+    #{$root}__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 64px;
+
+      .btn {
+        letter-spacing: 0.4px;
+        padding: 15px 32px;
+      }
+    }
+
+    #{$root}__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #{$root}__images {
+      display: flex;
+      justify-content: space-between;
+    }
+ 
+    @include media(desktop) {
+      #{$root}__images {
+        flex-direction: column;
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 16/7;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    @include media(tablet) {
+      padding: 30px 0;
+
+      #{$root}__header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 32px;
+      }
+
+      #{$root}__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 20px;
+
+        .btn {
+          margin-top: auto;
+        }
+      }
+
+      #{$root}__images {
+        flex-direction: column;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include media(mobile-l) {
+      #{$root}__content {
+        flex-direction: column;
+      }
+    }
+  }
+}

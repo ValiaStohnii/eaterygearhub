@@ -1,0 +1,135 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.request {
+  $root: &;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 85px;
+  padding: 64px 0;
+  background-color: var(--color-gray-200);
+
+  &__form {
+    width: 100%;
+    max-width: 592px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-size: 70px;
+    color: var(--color-white);
+  }
+
+  p {
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 592px;
+    text-align: center;
+    color: var(--color-gray-100);
+  }
+
+  label {
+    display: block;
+
+    &:not(:last-of-type) {
+      margin-bottom: 23px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 17px;
+    }
+  }
+
+  textarea,
+  input {
+    border-width: 0;
+    padding: 17px 24px;
+    width: 100%;
+    font-family: var(--font-family-primary);
+    font-weight: var(--fw-600);
+    font-size: 18px;
+    line-height: 1;
+    background-color: var(--color-gray-150);
+    resize: none;
+
+    &::placeholder {
+      color: var(--color-white);
+    }
+  }
+
+  textarea {
+    min-height: 162px;
+  }
+
+  .btn {
+    margin: 0 auto;
+    padding: 15px 32px;
+    width: 100%;
+  }
+
+  @include media(tablet) {
+    padding: 30px 15px;
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__form {
+      margin-bottom: 20px;
+    }
+
+    a {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: clamp(20px, 3rem + 1vi, 56px);
+    }
+  }
+
+  @include media(mobile-l) {
+    &__form {
+      margin-right: 0;
+      width: 100%;
+      max-width: unset;
+    }
+
+    p {
+      max-width: unset;
+    }
+  }
+
+  @include media(mobile-m) {
+    .request__btn {
+      display: none;
+    }
+
+    h3,
+    a,
+    label {
+      margin-left: 0;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: clamp(20px, 2rem + 1vi, 56px);
+    }
+
+    textarea {
+      overflow: hidden;
+      margin-bottom: 20px;
+      height: 120px;
+    }
+  }
+}

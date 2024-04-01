@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Services"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "services"}'></include>
+
+    <main class="main">
+      
+      <div class="container">
+        <include src="./html/_hero.html">
+          {
+            "title": "services",
+            "text": "
+            Whether it’s the joy of a wedding day, the professionalism of corporate events, or the fun of parties, we're here to capture every moment with care and creativity.
+            ",
+            "addClass": "",
+            "image": "services"
+          }
+        </include>
+
+        <include src="./html/services/_service.html"></include>
+      </div>
+
+      <include src="./html/services/_pricing.html"></include>
+
+      <div class="container">
+        <include src="./html/services/_booking.html"></include>
+
+        <include src="./html/home/_request.html"></include>
+      </div>
+      
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+h1,
+h2,
+h3 {
+  overflow: hidden;
+  width: fit-content;
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-400);
+  line-height: 1.21;
+  color: var(--color-white);
+}
+
+a,
+button {
+  --font-weight: 400;
+
+  font-family: var(--font-family-primary);
+}
+
+h1 {
+  font-size: clamp(36px, 5.2451rem + 1.0458vi, 90px);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(20px, 4rem + 1vi, 70px);
+  text-transform: uppercase;
+
+  @include media(tablet) {
+    font-size: clamp(20px, 2rem + 1vi, 70px);
+  }
+}
+
+h3 {
+  font-size: clamp(16px, 2rem + 1vi, 24px);
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: var(--color-gray-100);
+}

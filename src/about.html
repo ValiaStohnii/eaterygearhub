@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "About"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "about"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/_hero.html">
+          {
+            "title": "
+              adout us
+            ",
+            "text": "
+              At PicturePerfectJourney, we believe in capturing life's fleeting moments with the highest level of artistry and care. Our mission is to provide unforgettable memories through our lens, ensuring each photograph tells a story as unique as the individuals and events we capture.
+            ",
+            "addClass": "",
+            "image": "about"
+          }
+        </include>
+
+        <include src="./html/about/_history.html"></include>
+      </div>
+
+      <include src="./html/about/_team.html"></include>
+
+      <div class="container">
+        <include src="./html/about/_approach.html"></include>
+
+        <include src="./html/home/_request.html"></include>
+      </div>
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

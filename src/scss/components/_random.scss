@@ -1,0 +1,36 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.random {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  p {
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 795px;
+    font-weight: var(--fw-300);
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--color-white);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @include media(tablet) {
+    padding: 30px 0;
+
+    h2 {
+      font-size: clamp(20px, 2rem + 1vi, 40px);
+    }
+  }
+
+  @include media(mobile-l) {
+    p {
+      max-width: unset;
+    }
+  }
+}

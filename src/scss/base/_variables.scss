@@ -1,0 +1,45 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --content-width: 1200px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // font-family
+  --font-family-primary: "Cormorant", sans-serif;
+  --font-family-secondary: "Josefin Slab", serif;
+
+  // font-weight
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  // color
+  --color-white: #fff;
+  --color-black: #0d0f11;
+  --color-green-100: #ccff00;
+  --color-green-200: #3D412A;
+  --color-gray-50: rgba(255, 255, 255, 0.24);
+  --color-gray-60: rgba(255, 255, 255, 0.32);
+  --color-gray-100: rgba(255, 255, 255, 0.64);
+  --color-gray-150: #252C33;
+  --color-gray-200: #1a2025;
+  --color-gray-250: #323A43;
+
+  --color-dark: #292e3d;
+  --color-orange-50: #fff9f6;
+  --color-orange-100: rgba(233, 76, 4, 0.12);
+  --color-orange-150:#fef1eb;
+  --color-orange-200:#e94c04;
+  --color-orange-300:#902e01;
+
+  //  radius
+  --radius-main: 8px;
+
+  // shadow
+  --shadow-primary: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
+}

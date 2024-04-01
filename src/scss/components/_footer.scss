@@ -1,0 +1,156 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.footer {
+  padding: 24px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__item {
+    &:not(:last-child) {
+      margin-right: 32px;
+
+      @include media(tablet) {
+        margin-right: 12px;
+      }
+
+      @include media(mobile-l) {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 291px;
+  }
+
+  .btn {
+    padding: 7px 19px;
+    font-size: 20px !important;
+    line-height: 1.21;
+    letter-spacing: 0.1px;
+
+    &--simple {
+      margin-right: 16px;
+
+      @include media(tablet) {
+        margin-right: 8px;
+      }
+
+      @include media(mobile-l) {
+        margin: 0 auto 15px;
+      }
+    }
+
+    @include media(mobile-l) {
+      margin: 0 auto;
+    }
+  }
+
+  .nav__link {
+    font-family: var(--font-family-secondary);
+    font-weight: var(--fw-600);
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  &__copyrigth {
+    text-align: center;
+
+    p {
+      font-family: var(--font-family-primary);
+      font-weight: var(--fw-600);
+      font-size: 18px;
+      letter-spacing: 0.2px;
+      color: var(--color-gray-100);
+    }
+  }
+
+  @include media(tablet) {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    .nav__list {
+      margin-right: 20px;
+    }
+
+    .logo {
+      margin-right: 20px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__inner {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .nav__list {
+      margin-right: auto;
+    }
+
+    .logo {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__nav {
+      z-index: 1;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    .btn {
+      margin-bottom: 12px;
+    }
+
+    &__copyrigth {
+      .container {
+        flex-direction: column-reverse;
+      }
+
+      .copyrigth {
+        &__list {
+          flex-direction: column;
+          margin-bottom: 12px;
+        }
+
+        &__item {
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    .logo {
+      margin-bottom: 32px;
+    }
+
+    &__links {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}

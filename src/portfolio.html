@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Portfolio"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "portfolio"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/_hero.html">
+          {
+            "title": "portfolio",
+            "text": "
+              Welcome to our visual journey! We're thrilled to invite you on a tour through our extensive portfolio, showcasing the breadth and depth of our event photography. From intimate weddings to grand corporate events and vibrant celebrations, our lens captures the essence of every occasion. Dive in to discover the magic we bring to each event, immortalizing moments that last a lifetime.
+            ",
+            "addClass": "",
+            "image": "about"
+          }
+        </include>
+        
+        <include src="./html/portfolio/_service.html"></include>
+
+        <include src="./html/portfolio/_weddings.html">
+          {
+            "title": "Weddings",
+            "class": "",
+            "addClass": "",
+            "text": "
+              Weddings are a symphony of emotions, and our photography aims to capture every note. From the anticipatory moments before the 'I dos' to the exhilarating celebration that follows, our portfolio showcases our ability to freeze time, encapsulating the love, joy, and beauty of your special day. Our approach is a blend of candid moments and orchestrated elegance, ensuring a timeless collection of memories.
+            ",
+            "background": "weddings",
+            "image": "weddings",
+            "hidden": ""
+          }
+        </include>
+
+        <include src="./html/portfolio/_weddings.html">
+          {
+            "title": "Corporate Events",
+            "class": "weddings--corporate",
+            "addClass": "weddings__content--reverse",
+            "text": "
+              Corporate events demand a unique blend of professionalism and creativity, and our portfolio reflects just that. From keynote speeches to spontaneous networking, we highlight the diverse aspects of corporate gatherings, focusing on the moments that define and elevate the professional experience. Our images not only document but also enhance the narrative of your corporate milestones.
+            ",
+            "background": "corporate-events",
+            "image": "corporate",
+            "hidden": "weddings__hidden"
+          }
+        </include>
+
+        <include src="./html/portfolio/_weddings.html">
+          {
+            "title": "Parties and Celebrations",
+            "class": "weddings--parties",
+            "addClass": "",
+            "text": "
+              Life is a collection of moments worth celebrating, and our cameras are there to capture the essence of every party and celebration. From birthday bashes to anniversary parties, our portfolio vibrates with the energy and excitement of these events. We specialize in freezing the fleeting moments of joy, laughter, and camaraderie, delivering snapshots that reignite the feelings of the day.
+            ",
+            "background": "parties-celebrations",
+            "image": "parties",
+            "hidden": ""
+          }
+        </include>
+        
+        <include src="./html/home/_request.html"></include>
+      </div>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

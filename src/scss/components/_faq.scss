@@ -1,0 +1,87 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.faq {
+  padding: 71px 0 140px;
+
+  &__list {
+    margin-bottom: rem(32);
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--color-gray-60);
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  details {
+    overflow: hidden;
+
+    p {
+      font-weight: var(--fw-300);
+      font-size: 20px;
+      line-height: 1.4;
+      color: var(--color-gray-100);
+    }
+
+    &[open] {
+      summary::before {
+        rotate: unset;
+      }
+    }
+  }
+
+  summary {
+    position: relative;
+    padding: 16px 57px 16px 0;
+    font-family: var(--font-family-primary);
+    font-weight: var(--fw-400);
+    font-size: 24px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: var(--color-white);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 16px;
+      overflow: hidden;
+      border-radius: var(--radius-main);
+      width: 24px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.40625 10.0078L-0.0078125 8.59375L7.99609 0.589844L16.002 8.48828L14.5977 9.91211L8.00391 3.41016L1.40625 10.0078Z' fill='%23CCFF00'/%3E%3C/svg%3E");
+      background-position: center;
+      background-size: 16px 10px;
+      background-repeat: no-repeat;
+      rotate: 180deg;
+    }
+
+    +div {
+      padding: 0 55px 16px 0;
+    }
+  }
+
+  a {
+    margin: 0 auto;
+  }
+
+  @include media(mobile-l) {
+    padding: 30px 0;
+
+    summary {
+      line-height: 1.2;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.container--faq {
+  max-width: 1250px;
+}

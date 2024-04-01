@@ -1,0 +1,242 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.hero {
+  $root: &;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    min-height: 813px;
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0 0;
+  }
+
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 170px 0;
+    height: fit-content;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 24px;
+    width: 100%;
+    max-width: 693px;
+  }
+
+  .btn {
+    padding: 15px 32px;
+    letter-spacing: 0.4px;
+
+    @include media(mobile-l) {
+      padding: 10px 15px;
+      font-size: 18px;
+    }
+  }
+
+  &--home {
+    #{$root}__inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      min-height: 418px;
+      background-position: 0 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 57px 0 27px;
+
+      @include media(tablet-wide) {
+        margin-top: 0;
+      }
+
+      @include media(mobile-l) {
+        min-height: 300px;
+      }
+    }
+
+    #{$root}__images {
+      display: flex;
+
+      img {
+        &:not(:last-child) {
+          margin-right: 16px;
+
+          @include media(tablet-wide) {
+            margin-right: 0;
+            margin-bottom: 16px;
+          }
+        }
+
+        &:last-child {
+          @include media(mobile-l) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    #{$root}__content {
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0;
+
+      @include media(tablet-wide) {
+        flex-direction: column;
+      }
+    }
+
+    h1  {
+      margin-bottom: 0;
+    }
+
+    p {
+      max-width: unset;
+      margin-bottom: 32px;
+      letter-spacing: 0.3px;
+    }
+  
+    .btn {
+      padding: 15px 32px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &--services {
+    #{$root}__content {
+      padding: 71px 0 0;
+    }
+  }
+
+  &--portfolio {
+    #{$root}__content {
+      padding: 14px 0 0;
+
+      p {
+        width: 100%;
+        max-width: 695px;
+      }
+    }
+  }
+
+  &--faq {
+    #{$root}__content {
+      padding: 52px 0 0;
+    }
+  }
+
+  &--articles {
+    padding: 86px 0 32px;
+    a {
+      font-weight: var(--fw-600);
+      font-size: 24px;
+      line-height: 1;
+      color: var(--color-green-100);
+      margin-bottom: 32px;
+      position: relative;
+      padding-left: 40px;
+      display: block;
+
+      &:before {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.57 5.92993L3.5 11.9999L9.57 18.0699' stroke='%23CCFF00' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.4999 12H3.66992' stroke='%23CCFF00' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    img {
+      margin-bottom: 32px;
+    }
+
+    span {
+      font-weight: var(--fw-600);
+      font-size: 18px;
+      line-height: 1.21;
+      color: var(--color-gray-100);
+      margin-bottom: 32px;
+      display: block;
+    }
+
+    h1 {
+      font-size: clamp(20px, 4rem + 1vi, 70px);
+      margin-bottom: 32px;
+    }
+
+    p {
+      width: 100%;
+      max-width: 800px;
+      line-height: 1.44;
+    }
+  }
+
+  @include media(tablet-wide) {
+    h1 {
+      font-size: clamp(2.5rem, 2.2451rem + 1.0458vi, 3.5rem);
+    }
+  }
+
+  @include media(tablet) {
+    padding: 0;
+
+    &__inner {
+      min-height: 526px;
+    }
+
+    &__container {
+      padding: 40px 0;
+      flex-direction: column;
+    }
+
+    &__content {
+      margin-bottom: 32px;
+    }
+
+    img {
+      aspect-ratio: 16/7;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__inner {
+      min-height: 500px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      max-width: 94%;
+    }
+  }
+}
