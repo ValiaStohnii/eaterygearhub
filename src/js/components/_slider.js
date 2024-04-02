@@ -1,7 +1,7 @@
 import Swiper, { Navigation, Pagination, EffectFade, Scrollbar } from 'swiper';
 
-const swiperTeam = new Swiper('.team-slider', {
-  slidesPerView: 1,
+const swiperTeam = new Swiper('.crafting-slider', {
+  slidesPerView: 3,
   spaceBetween: 20,
   modules: [Navigation, Pagination],
   pagination: {
@@ -12,8 +12,8 @@ const swiperTeam = new Swiper('.team-slider', {
   draggable: true,
   grabCursor: true,
   navigation: {
-    nextEl: '.team .btn--next',
-    prevEl: '.team .btn--prev',
+    nextEl: '.crafting .btn--next',
+    prevEl: '.crafting .btn--prev',
   },
   breakpoints: {
     992: {

@@ -1,6 +1,6 @@
-<section class="hero hero--{{title}}">
-  <div class="hero__inner" style="background-image: url('./images/{{image}}/hero-bg.png');">
-    <div class="hero__container">
+<section class="hero hero--{{addClass}}">
+  <div class="container">
+    <div class="hero__inner" style="background-image: url('./images/{{image}}/hero.jpeg');">
       <div class="hero__content">
         <h1>
           {{title}}
@@ -9,9 +9,11 @@
         <p class="{{addClass}}">
           {{text}}
         </p>
-      </div>
 
-      <img src="./images/{{image}}/hero.jpeg" alt=" {{title}}" width="388" height="388" loading="lazy">
+        <button class="btn btn--request request-btn" type="button">
+          {{btn}}
+        </button>
+      </div>
     </div>
   </div>
 </section>

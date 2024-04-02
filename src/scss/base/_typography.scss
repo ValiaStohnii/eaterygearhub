@@ -7,9 +7,9 @@ h3 {
   overflow: hidden;
   width: fit-content;
   font-family: var(--font-family-primary);
-  font-weight: var(--fw-400);
-  line-height: 1.21;
-  color: var(--color-white);
+  font-weight: var(--fw-700);
+  line-height: 1.2;
+  color: var(--color-black);
 }
 
 a,
@@ -20,28 +20,25 @@ button {
 }
 
 h1 {
-  font-size: clamp(36px, 5.2451rem + 1.0458vi, 90px);
-  text-transform: uppercase;
+  font-size: clamp(24px, 2.2451rem + 1.0458vi, 44px);
+  line-height: 1;
 }
 
 h2 {
-  font-size: clamp(20px, 4rem + 1vi, 70px);
-  text-transform: uppercase;
-
-  @include media(tablet) {
-    font-size: clamp(20px, 2rem + 1vi, 70px);
-  }
+  font-size: clamp(20px, 2rem + 1vi, 40px);
 }
 
 h3 {
+  font-weight: var(--fw-600);
   font-size: clamp(16px, 2rem + 1vi, 24px);
-  line-height: 1.5;
-  text-transform: capitalize;
 }
 
 p {
-  font-size: 20px;
-  line-height: 1.6;
-  text-transform: capitalize;
-  color: var(--color-gray-100);
+  font-weight: var(--fw-300);
+  font-style: var(--fs-italic);
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 30px;
+  color: var(--color-dark);
 }
