@@ -1,21 +1,77 @@
 <section class="portfolio portfolio--home">
-  <div class="portfolio__header">
+  <div class="container">
     <div class="portfolio__content">
       <h2>
-        Portfolio
+        Our Portfolio
       </h2>
       <p>
-        Easily navigate through our portfolio divided by event types such as weddings, corporate gatherings, etc.
+        Our designer already made a lot of beautiful showcase of rooms that inspire you
       </p>
+      
+      <a class="btn btn--request" href="portfolio.html">
+        Explore More
+      </a>
     </div>
 
-    <a class="btn btn--simple" href="portfolio.html">
-      View Full Gallery
-    </a>
-  </div>
+    <div class="portfolio-slider">
+      <ul class="portfolio__list swiper-wrapper">
+        <li class="portfolio__item swiper-slide">
+          <a>
+            <img src="./images/home/cafe.jpeg" alt="Cafe" width="400" height="582">
+            
+            <div class="portfolio__content">
+              <p>
+                Read more
+              </p>
+              <h3>
+                Cafe
+              </h3>
+              <button class="btn btn--slider btn--next" type="button">
+              </button>
+            </div>
 
-  <div class="portfolio__images">
-    <img src="./images/home/portfolio-flower.jpeg" alt="Easily navigate through our portfolio" width="896" height="640" loading="lazy">
-    <img src="./images/home/portfolio-wedding.jpeg" alt="divided by event types such as weddings" width="288" height="640" loading="lazy">
+          </a>
+          
+        </li>
+
+        <li class="portfolio__item swiper-slide">
+          <a>
+            <img src="./images/home/bar.jpeg" alt="Bar" width="400" height="582">
+            
+            <div class="portfolio__content">
+              <p>
+                Read more
+              </p>
+              <h3>
+                Bar
+              </h3>
+              <button class="btn btn--slider btn--next" type="button">
+              </button>
+            </div>
+          </a>
+         
+        </li>
+
+        <li class="portfolio__item swiper-slide">
+          <a>
+            <img src="./images/home/restaurant.jpeg" alt="Restaurant" width="400" height="582">
+            
+            <div class="portfolio__content">
+              <p>
+                Read more
+              </p>
+              <h3>
+                Restaurant
+              </h3>
+              <button class="btn btn--slider btn--next" type="button">
+              </button>
+            </div>
+          </a>
+         
+        </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
 </section>

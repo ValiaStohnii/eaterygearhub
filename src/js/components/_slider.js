@@ -6,7 +6,7 @@ const swiperTeam = new Swiper('.crafting-slider', {
   modules: [Navigation, Pagination],
   pagination: {
     clickable: true,
-    el: '.swiper-pagination',
+    el: '.crafting .swiper-pagination',
   },
 
   draggable: true,
@@ -25,22 +25,15 @@ const swiperTeam = new Swiper('.crafting-slider', {
   },
 });
 
-const swiperReviews = new Swiper('.reviews__slider', {
+const swiperPortfolio = new Swiper('.portfolio-slider', {
   slidesPerView: 1,
-  speed: 500,
-  effect: 'fade',
-  autoplay: {
-    delay: 200,
-  },
-  modules: [Navigation, Scrollbar, Pagination, EffectFade],
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
+  spaceBetween: 20,
+  loop: true,
+  modules: [Navigation, Pagination],
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
   draggable: true,
   grabCursor: true,
-  navigation: {
-    nextEl: '.reviews .btn--next',
-    prevEl: '.reviews .btn--prev',
-  },
 });

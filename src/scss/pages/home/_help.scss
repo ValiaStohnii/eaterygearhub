@@ -1,0 +1,27 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.help {
+  $root: &;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+
+  &__container {
+    width: 100%;
+    max-width: 564px;
+
+    &--right {
+      max-width: 594px;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    &--right {
+      flex-direction: column;
+    }
+  }
+}
