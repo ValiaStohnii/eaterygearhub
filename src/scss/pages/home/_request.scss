@@ -1,0 +1,121 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.request {
+  $root: &;
+
+  margin-bottom: 85px;
+  padding: 64px 0;
+
+  &__form {
+    display: flex;
+    margin-bottom: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 23px;
+    letter-spacing: -0.8px;
+  }
+
+  label {
+    display: block;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 295px;
+
+    &:last-of-type {
+      max-width: 400px;
+    }
+  }
+
+  textarea,
+  input {
+    border: 1px solid var(--color-dark);
+    border-radius: var(--radius-main);
+    padding: 12px 16px;
+    width: 100%;
+    height: 100%;
+    max-width: 295px;
+    max-height: 48px;
+    font-family: var(--font-family-primary);
+    font-weight: var(--fw-300);
+    font-size: 18px;
+    line-height: 1.33;
+    resize: none;
+
+    &::placeholder {
+      color: var(--color-gray-200);
+    }
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .btn {
+    border-radius: 24px;
+    padding: 10px 32px;
+    font-weight: var(--fw-600);
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  @include media(tablet) {
+    padding: 30px 15px;
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__form {
+      margin-bottom: 20px;
+    }
+
+    a {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: clamp(20px, 3rem + 1vi, 56px);
+    }
+  }
+
+  @include media(mobile-l) {
+    &__form {
+      margin-right: 0;
+      width: 100%;
+      max-width: unset;
+    }
+
+    p {
+      max-width: unset;
+    }
+  }
+
+  @include media(mobile-m) {
+    .request__btn {
+      display: none;
+    }
+
+    h3,
+    a,
+    label {
+      margin-left: 0;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: clamp(20px, 2rem + 1vi, 56px);
+    }
+
+    textarea {
+      overflow: hidden;
+      margin-bottom: 20px;
+      height: 120px;
+    }
+  }
+}
