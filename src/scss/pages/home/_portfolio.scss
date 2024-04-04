@@ -8,17 +8,19 @@
   padding: 60px 0;
   background-color: var(--color-orange-100);
 
-  .container {
+  &__inner {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     position: relative;
   }
 
   &-slider {
-    width: 400px;
+    max-width: 920px;
+    width: 100%;
 
     .swiper-slide {
-      width: 295px !important;
+      max-width: 295px;
 
       img {
         aspect-ratio: 4.85 / 8;
@@ -29,9 +31,11 @@
       }
 
       &-active {
-        width: 400px !important;
+        max-width: 400px;
+        width: 100%;
         opacity: 1;
         visibility: visible;
+        order: -1;
 
         .portfolio__content {
           display: flex;
