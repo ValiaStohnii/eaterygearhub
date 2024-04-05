@@ -33,20 +33,20 @@
   }
 
   h1 {
-    margin-bottom: 97px;
+    margin-bottom: 45px;
     line-height: 1.2;
     letter-spacing: -1px;
   }
 
   p {
     font-size: 24px;
-    margin-bottom: 44px;
     text-align: justify;
     text-indent: 30px;
   }
 
   .btn {
     padding: 19px;
+    margin-bottom: 44px;
     max-width: 100%;
     justify-content: center;
     line-height: 1.5;
@@ -58,80 +58,49 @@
     }
   }
 
-  &--home {
-    // #{$root}__inner {
-    //   position: relative;
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   overflow: hidden;
-    //   min-height: 633px;
-    //   background-position: 0 0;
-    //   background-size: contain;
-    //   background-repeat: no-repeat;
+  &--home{
+    h1 {
+      margin-bottom: 97px;
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
 
-    //   @include media(tablet-wide) {
-    //     margin-top: 0;
-    //   }
+    #{$root}__home {
+      display: flex;
+      flex-direction: column-reverse;
 
-    //   @include media(mobile-l) {
-    //     min-height: 300px;
-    //   }
-    // }
-
-    // #{$root}__images {
-    //   display: flex;
-
-    //   img {
-    //     &:not(:last-child) {
-    //       margin-right: 16px;
-
-    //       @include media(tablet-wide) {
-    //         margin-right: 0;
-    //         margin-bottom: 16px;
-    //       }
-    //     }
-
-    //     &:last-child {
-    //       @include media(mobile-l) {
-    //         display: none;
-    //       }
-    //     }
-    //   }
-    // }
-
-    // #{$root}__content {
-    //   z-index: 1;
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: space-between;
-    //   flex-direction: row;
-    //   padding: 0;
-
-    //   @include media(tablet-wide) {
-    //     flex-direction: column;
-    //   }
-    // }
-
-    // h1  {
-    //   margin-bottom: 0;
-    // }
-
-    // p {
-    //   max-width: unset;
-    //   margin-bottom: 32px;
-    //   letter-spacing: 0.3px;
-    // }
-  
-    // .btn {
-    //   padding: 15px 32px;
-    //   letter-spacing: 0.4px;
-    // }
+      p {
+        font-size: 24px;
+        margin-bottom: 44px;
+        text-align: justify;
+        text-indent: 30px;
+      }
+    
+      .btn {
+        padding: 19px;
+        margin-bottom: 0;
+        max-width: 100%;
+        justify-content: center;
+        line-height: 1.5;
+        font-size: 24px;
+    
+        @include media(mobile-l) {
+          padding: 10px 15px;
+          font-size: 18px;
+        }
+      }
+    }
   }
 
   &--services {
+    h1 {
+      margin-bottom: 45px;
+    }
+
     #{$root}__content {
-      padding: 71px 0 0;
+      width: 100%;
+      max-width: 494px;
+      padding: 60px;
     }
   }
 

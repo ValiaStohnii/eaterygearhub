@@ -7,8 +7,28 @@
     <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
 
     <main class="main">
+      <include src="./html/_hero.html">
+        {
+          "title": "
+          Discover Your Perfect Piece
+          ",
+          "text": "
+          From stylish seating options to essential kitchen equipment, we have everything to elevate your space and delight your guests.
+          ",
+          "addClass": "catalog",
+          "btn": "10% SALE",
+          "image": "catalog"
+        }
+      </include>
+
       <div class="container">
-       
+        <include src="./html/catalog/_additional.html"></include>
+
+        <include src="./html/catalog/_catalog.html"></include>
+
+        <include src="./html/home/_help.html"></include>
+
+        <include src="./html/home/_request.html"></include>
       </div>      
     </main>
   

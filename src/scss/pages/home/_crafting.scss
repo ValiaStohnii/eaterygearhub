@@ -46,6 +46,15 @@
   &__content {
     padding: 0 25px 0 16px;
 
+    span {
+      font-weight: var(--fw-400);
+      font-style: var(--fs-italic);
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: 0.14px;
+      color: var(--color-dark);
+    }
+
     p {
       letter-spacing: 0;
     }
