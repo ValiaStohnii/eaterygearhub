@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                Crosby St. Roxie Storage Bench
+                ",
+                "text": "
+                Wrapped in a white upholstery, the bench seat features wonderful durability, while cushioned padding offers extra comfort and support.
+                ",
+                "image_a": "roxie-bench-a.jpeg",
+                "image_b": "roxie-bench-b.jpeg",
+                "price": "$199.",
+                "cents": "99",
+                "dimensions": "16.5' L x 18.0' H x 45.0' W",
+                "weight": "27.6 lbs.",
+                "color": "White",
+                "material": "Mixed - Wood/Upholstered",
+                "shape": "Oval",
+                "department": "Furniture",
+                "location": "Benches",
+                "upc": "789112876597"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

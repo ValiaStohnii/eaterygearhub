@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                Steel Slat Outdoor C-Table
+                ",
+                "text": "
+                Complete your outdoor dining arrangement or create a casual seating space with our black Grammercy steel slat outdoor C-table.
+                ",
+                "image_a": "steel-slat-a.jpeg",
+                "image_b": "steel-slat-b.jpeg",
+                "price": "$49.",
+                "cents": "99",
+                "dimensions": "18.9' L x 25.6' H x 15.0' W",
+                "weight": "9.7 lbs.",
+                "color": "Black",
+                "material": "Steel",
+                "shape": "Rectangle",
+                "department": "Patio & Seasonal",
+                "location": "Outdoor Sets",
+                "upc": "197154167120"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

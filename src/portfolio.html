@@ -7,10 +7,48 @@
     <include src="./html/_header.html" locals='{"page": "portfolio"}'></include>
 
     <main class="main">
-      <div class="container">
-       
-      </div>
+      <include src="./html/_hero.html">
+        {
+          "title": "
+          Crafting Culinary Spaces to Perfection
+          ",
+          "text": "
+          Discover a comprehensive suite of services tailored to outfit cafes, bars, and restaurants with precision
+          ",
+          "addClass": "services",
+          "btn": "Learn More",
+          "image": "services"
+        }
+      </include>
 
+      <include src="./html/home/_crafting.html">
+        {
+          "span_a": "
+          Crafting Conceptual Masterpieces
+          ",
+          "text_a": "
+          Dive into our meticulous design process, encompassing concept development, spatial planning, and interior design to transform your vision into reality.
+          ",
+          "span_b": "Sourcing Excellence",
+          "text_b": "
+          Experience our procurement service, where we meticulously source furniture, equipment, and decor items to meet your establishment's needs.
+          ",
+          "span_c": "Efficient Deployment",
+          "text_c": "
+          Discover our streamlined installation process, encompassing seamless delivery, assembly, and setup of furniture and equipment to minimize disruption to you
+          ",
+          "span_d": " Tailored Solutions",
+          "text_d": "
+          Unlock the potential of customization with our services tailored for furniture, fixtures, and decor items, allowing you to add unique touches and personality to your space.
+          "
+        }
+      </include>
+
+      <div class="container">
+        <include src="./html/home/_reviews.html"></include>
+
+        <include src="./html/home/_request.html"></include>
+      </div>
     </main>
 
     <include src="./html/_footer.html"></include>

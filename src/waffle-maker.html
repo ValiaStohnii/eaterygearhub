@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                Belgian Waffle Maker
+                ",
+                "text": "
+                The compact design ensures it fits perfectly in any kitchen space, making it the ultimate companion for breakfast lovers everywhere.
+                ",
+                "image_a": "waffle-maker-a.jpeg",
+                "image_b": "waffle-maker-b.jpeg",
+                "price": "$17.",
+                "cents": "99",
+                "dimensions": "15.5' L x 7.1' H x 9.4' W",
+                "weight": "6.0 lbs.",
+                "color": "Black, White, Red",
+                "material": "Metal",
+                "shape": "Oblong",
+                "department": "Store",
+                "location": "Cooking",
+                "upc": "840028731841"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

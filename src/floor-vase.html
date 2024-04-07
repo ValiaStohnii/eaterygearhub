@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                White Open Floor Vase
+                ",
+                "text": "
+                If your decor aesthetic is wide open, our white open floor vase may be the element your home’s been missing.
+                ",
+                "image_a": "floor-vase-a.jpeg",
+                "image_b": "floor-vase-b.jpeg",
+                "price": "$109.",
+                "cents": "99",
+                "dimensions": "20.3' L x 48.4' H x 8.7' W",
+                "weight": "22.4 lbs.",
+                "color": "White",
+                "material": "Synthetic",
+                "shape": "Oblong",
+                "department": "Store",
+                "location": "Home Décor & Lamps",
+                "upc": "191607364036"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

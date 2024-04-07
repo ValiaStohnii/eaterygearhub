@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                Miya Beige Accent Chair
+                ",
+                "text": "
+                This chair is upholstered in a beige linen-look upholstery, and it's textured for a vintage feel. Foam-filled cushions offer extra padding as you read or relax, and its pillow-back and square arms provide plenty of support.
+                ",
+                "image_a": "miya-a.jpeg",
+                "image_b": "miya-b.jpeg",
+                "price": "$199.",
+                "cents": "99",
+                "dimensions": "25.7' L x 29.7' H x 31.8' W",
+                "weight": "31.0 lbs.",
+                "color": "Brown",
+                "material": "Mixed - Wood/Upholstered",
+                "shape": "Rectangle",
+                "department": "Furniture",
+                "location": "hidden",
+                "upc": "197154134498"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                White Carved Wall Mirror
+                ",
+                "text": "
+                Its stunning faux wood frame adds character and interest to your space, making it a standout piece of decor.
+                ",
+                "image_a": "wall-mirror-a.jpeg",
+                "image_b": "wall-mirror-b.jpeg",
+                "price": "$17.",
+                "cents": "99",
+                "dimensions": "35.4' L x 35.4' H x 0.8' W",
+                "weight": "1.6 lbs.",
+                "color": "White",
+                "material": "Faux Wood",
+                "shape": "Irregular",
+                "department": "Store",
+                "location": "Home Décor & Lamps",
+                "upc": "197154155615"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

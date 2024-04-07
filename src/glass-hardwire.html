@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                Glass Hardwire Pendant Light
+                ",
+                "text": "
+                With its sleek design and vibrant yellow glass construction, it effortlessly blends contemporary aesthetics with timeless charm.
+                ",
+                "image_a": "glass-hardwire-a.jpeg",
+                "image_b": "glass-hardwire-b.jpeg",
+                "price": "$37.",
+                "cents": "49",
+                "dimensions": "9.1' L x 8.7' H x 9.1' W",
+                "weight": "4.5 lbs.",
+                "color": "Yellow",
+                "material": "Glass",
+                "shape": "Round",
+                "department": "Store",
+                "location": "Lighting",
+                "upc": "197154042151"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

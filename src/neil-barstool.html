@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                Neil Barstool, Black
+                ",
+                "text": "
+                Elevate your modern decor with the sleek and stylish Neil Black Counter Stool. Crafted with a sturdy metal frame, this industrial chic piece effortlessly combines form and functionality.
+                ",
+                "image_a": "neil-barstoo-a.jpeg",
+                "image_b": "neil-barstoo-b.jpeg",
+                "price": "$54.",
+                "cents": "99",
+                "dimensions": "17.0' L x 29.0' H x 20.0' W",
+                "weight": "9.9 lbs.",
+                "color": "Black",
+                "material": "Metal",
+                "shape": "hidden",
+                "department": "Furniture",
+                "location": "Barstools",
+                "upc": "197154134498"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

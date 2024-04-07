@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                Drake Barstool, Cognac
+                ",
+                "text": "
+                This cognac barstool with has a universal design that is sure to impress your family and friends and fit neatly into your decor. 
+                ",
+                "image_a": "drake-barstool-a.jpeg",
+                "image_b": "drake-barstool-b.jpeg",
+                "price": "$84.",
+                "cents": "99",
+                "dimensions": "21.0' L x 41.1' H x 18.5' W",
+                "weight": "19.8 lbs.",
+                "color": "Brown",
+                "material": "Faux Leather",
+                "shape": "Oblong",
+                "department": "Furniture",
+                "location": "Barstools",
+                "upc": "191607364036"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

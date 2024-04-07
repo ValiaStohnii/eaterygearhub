@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                6-Piece Bamboo Tool Set
+                ",
+                "text": "
+                Perfectly suited for any kitchen, this versatile set features a variety of utensils that will make meal prep fun and effortless.
+                ",
+                "image_a": "bamboo-tool-a.jpeg",
+                "image_b": "bamboo-tool-b.jpeg",
+                "price": "$9.",
+                "cents": "99",
+                "dimensions": "16.9' L x 4.7' H x 5.9' W",
+                "weight": "0.5 lbs.",
+                "color": "Green",
+                "material": "Bamboo",
+                "shape": "Oblong",
+                "department": "Store",
+                "location": "Cooking",
+                "upc": "840028714011"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

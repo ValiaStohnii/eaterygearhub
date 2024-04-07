@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Catalog"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "catalog"}'></include>
+
+    <main class="main">
+
+        <include src="./html/catalog/_product.html">
+            {
+                "title": "
+                Crackle Glass Wall Sconce
+                ",
+                "text": "
+                Hang a touch of flickering personality in any room in your home, or cast a sparkling glow on the patio as well.
+                ",
+                "image_a": "crackle-glass-a.jpeg",
+                "image_b": "crackle-glass-b.jpeg",
+                "price": "$19.",
+                "cents": "99",
+                "dimensions": "7.7' L x 10.0' H x 4.0' W",
+                "weight": "2.8 lbs.",
+                "color": "Metallic",
+                "material": "Glass",
+                "shape": "Round",
+                "department": "Home Décor & Lamps",
+                "location": "Lighting",
+                "upc": "191607446411"
+            }
+        </include>
+        
+        <div class="container">
+            <include src="./html/home/_request.html"></include>
+        </div>      
+    </main>
+  
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>
