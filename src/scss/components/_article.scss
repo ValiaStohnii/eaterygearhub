@@ -1,0 +1,96 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.article {
+  padding: 60px 0;
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(20px, 2rem + 1vi, 40px);
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+    }
+
+    p {
+      margin-bottom: 60px;
+      font-size: 20px;
+      text-indent: 0;
+    }
+  }
+
+  img {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  &__description {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1030px;
+
+    p {
+      font-family: var(--font-family-secondary);
+      font-weight: var(--fw-500);
+      font-style: normal;
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+      text-indent: 29px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .btn {
+    z-index: 3;
+    margin-right: 55px;
+    border-radius: 50%;
+    padding: 10px;
+    width: auto;
+    min-width: auto;
+    rotate: 180deg;
+
+    &::after {
+      right: 0;
+    }
+
+    &.swiper-button-disabled {
+      background-color: var(--color-orange-150);
+      pointer-events: none;
+    }
+
+    &--prev {
+      scale: -1 1;
+
+      &::before {
+        content: "";
+        width: 26px;
+        height: 26px;
+        background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.6958 7.43545H2.48568M2.48568 7.43545C2.48568 7.43545 7.36397 4.22722 8.35524 1.56589M2.48568 7.43545C2.48568 7.43545 6.79826 10.45 8.35524 13.305' stroke='white' stroke-width='2.17391' stroke-linecap='square'/%3E%3C/svg%3E ");
+        background-position: center;
+        background-size: 23px;
+        background-repeat: no-repeat;
+      }
+
+      &:hover {
+        background-color: var(--color-gray-200);
+      }
+    }
+  }
+
+  @include media(tablet) {
+    padding: 40px 0;
+  }
+
+  @include media(mobile-l) {
+    img {
+      aspect-ratio: 16/7;
+    }
+  }
+}

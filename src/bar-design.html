@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Portfolio"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "portfolio"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/portfolio/_article.html">
+          {
+            "title": "Bar Design: Metro Mixology Lounge",
+            "text": "Cheers to Urban Elegance: Designing a chic destination for cocktail aficionados.",
+            "image": "bar-design.jpeg",
+            "text_a": "
+            Project Description:     Metro Mixology Lounge, an upscale urban retreat, aspired to elevate the cocktail experience with a sophisticated and cosmopolitan atmosphere. Our team transformed the space with sleek furnishings, atmospheric lighting, and contemporary accents to create a stylish backdrop for socializing and sipping craft cocktails. From custom-designed bar counters to statement art installations, every detail was curated to embody the venue's modern elegance and metropolitan allure.
+            ",
+            "text_b": "
+            Innovative Design Elements:   Integrating smart lighting systems allowed for dynamic ambiance adjustments, adapting to the lounge's evolving atmosphere throughout the day and night. Incorporating interactive touch-screen menus enhanced the guest experience, providing detailed cocktail descriptions and recommendations.
+            ",
+            "text_c": "
+            Client Testimonial:   'Metro Mixology Lounge has become the talk of the town, thanks to its stunning design and impeccable service. Eatery Gear Hub truly exceeded our expectations, delivering a space that perfectly encapsulates our brand's ethos.' - Mark, Lounge Owner
+            "
+          }
+        </include>
+
+        <include src="./html/home/_request.html"></include>
+      </div>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

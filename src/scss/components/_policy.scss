@@ -2,48 +2,49 @@
 @use "../utils/mixins"as*;
 
 .policy {
-  padding: 86px 0;
+  padding: 60px 0;
   line-height: 1.5;
-  color: var(--color-white);
 
   &__content {
     &:not(:last-child) {
-      margin-bottom: 48px;
+      margin-bottom: 60px;
     }
-  }
-
-  .container {
-    padding: 64px 101px;
-    background-color: var(--color-gray-200);
   }
 
   h1 {
     position: relative;
-    margin: 0 auto 32px;
-    font-weight: var(--fw-400);
-    font-size: clamp(36px, 3.2451rem + 1.0458vi, 70px);
-    line-height: 1.21;
+    margin-bottom: 60px;
+    font-weight: var(--fw-700);
+    font-size: clamp(20px, 2rem + 1vi, 40px);
+    line-height: 1;
+    text-transform: uppercase;
   }
 
   h2 {
     margin-bottom: 24px;
     font-family: var(--font-family-primary);
-    font-weight: var(--fw-400);
-    font-size: 38px;
-    line-height: 1.1;
+    font-weight: var(--fw-700);
+    font-size: clamp(20px, 2rem + 1vi, 38px);
+    line-height: 1.2;
   }
 
   ul {
-    margin-bottom: 30px;
-    padding-left: 20px;
+    margin-bottom: 60px;
   }
 
   li {
-    list-style: disc;
-    font-weight: var(--fw-400);
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--color-white);
+    font-weight: var(--fw-300);
+    font-style: var(--fs-italic);
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 0;
+    color: var(--color-dark);
+
+    &::before {
+      content: "✓";
+      margin-right: 10px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 3px;
@@ -51,10 +52,13 @@
   }
 
   p {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 1.1px;
-    color: var(--color-white);
+    font-weight: var(--fw-300);
+    font-style: var(--fs-italic);
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 30px;
+    color: var(--color-dark);
 
     &:not(:last-child) {
       margin-bottom: 48px;
@@ -63,7 +67,7 @@
 
   a {
     text-decoration: underline;
-    color: var(--color-white);
+    color: var(--color-dark);
   }
 
   @include media(tablet) {

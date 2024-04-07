@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Portfolio"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "portfolio"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/portfolio/_article.html">
+          {
+            "title": "Cafe Outfitting: Serenity Brews Café",
+            "text": "Sip, Relax, Repeat: Crafting a serene sanctuary for coffee lovers.",
+            "image": "cafe-outfitting.jpeg",
+            "text_a": "
+            Project Description:   Serenity Brews Café, nestled in a quiet corner of the city, aimed to create a tranquil oasis for patrons seeking a moment of respite. Our team curated a space infused with cozy seating, soft lighting, and natural accents to evoke a sense of calm and comfort. From artisanal coffee tables to botanical-inspired décor, every element was thoughtfully selected to enhance the café's ambiance and foster a sense of community.
+            ",
+            "text_b": "
+            Challenges and Solutions:  Overcoming spatial constraints, our designers ingeniously utilized vertical space for additional seating areas, maximizing the cafe's capacity without compromising its airy ambiance. Incorporating acoustic panels mitigated noise levels, ensuring a peaceful environment conducive to relaxation.
+            ",
+            "text_c": "
+            Client Testimonial:   'Serenity Brews Café has become our neighborhood's favorite sanctuary. Thanks to the team at Eatery Gear Hub for bringing our vision to life with such creativity and attention to detail.' - Sarah, Café Owner
+            "
+          }
+        </include>
+
+        <include src="./html/home/_request.html"></include>
+      </div>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

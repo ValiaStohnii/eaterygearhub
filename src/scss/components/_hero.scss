@@ -106,66 +106,15 @@
 
   &--portfolio {
     #{$root}__content {
-      padding: 14px 0 0;
-
-      p {
-        width: 100%;
-        max-width: 695px;
-      }
-    }
-  }
-
-  &--faq {
-    #{$root}__content {
-      padding: 52px 0 0;
-    }
-  }
-
-  &--articles {
-    padding: 86px 0 32px;
-    a {
-      font-weight: var(--fw-600);
-      font-size: 24px;
-      line-height: 1;
-      color: var(--color-green-100);
-      margin-bottom: 32px;
-      position: relative;
-      padding-left: 40px;
-      display: block;
-
-      &:before {
-        content: "";
-        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.57 5.92993L3.5 11.9999L9.57 18.0699' stroke='%23CCFF00' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.4999 12H3.66992' stroke='%23CCFF00' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-        width: 24px;
-        height: 24px;
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 0;
-      }
-    }
-
-    img {
-      margin-bottom: 32px;
-    }
-
-    span {
-      font-weight: var(--fw-600);
-      font-size: 18px;
-      line-height: 1.21;
-      color: var(--color-gray-100);
-      margin-bottom: 32px;
-      display: block;
+      width: 100%;
+      max-width: 494px;
+      padding: 60px;
+      align-items: flex-start;
     }
 
     h1 {
-      font-size: clamp(20px, 4rem + 1vi, 70px);
-      margin-bottom: 32px;
-    }
-
-    p {
       width: 100%;
-      max-width: 800px;
-      line-height: 1.44;
+      max-width: 300px;
     }
   }
 

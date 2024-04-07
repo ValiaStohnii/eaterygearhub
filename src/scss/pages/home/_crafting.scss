@@ -2,6 +2,8 @@
 @use "../../utils/mixins/"as*;
 
 .crafting {
+  $root: &;
+
   position: relative;
   overflow: hidden;
   padding: 61px 0 84px;
@@ -46,13 +48,15 @@
   &__content {
     padding: 0 25px 0 16px;
 
-    span {
+    span,
+    .read-more-btn {
       font-weight: var(--fw-400);
       font-style: var(--fs-italic);
       font-size: 18px;
       line-height: 1.5;
       letter-spacing: 0.14px;
       color: var(--color-dark);
+      background-color: transparent;
     }
 
     p {
@@ -190,6 +194,31 @@
 
   .swiper-scrollbar-drag {
     background-color: var(--color-pink);
+  }
+
+  &--portfolio {
+    #{$root}__text {
+      height: 85px;
+      overflow: hidden;
+    }
+
+    #{$root}__read {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    #{$root}__grid {
+      display: flex;
+    }
+
+    #{$root}__content {
+      p {
+        letter-spacing: -0.3px;
+        text-align: left;
+        text-indent: 30px;
+      }
+    }
   }
 
   @include media(tablet) {

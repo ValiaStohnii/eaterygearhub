@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Portfolio"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "portfolio"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/portfolio/_article.html">
+          {
+            "title": "Customization Projects: Artisan's Hideout Restaurant",
+            "text": "Crafting Bespoke Dining Experiences: Tailoring unique spaces with artisanal flair.",
+            "image": "customization-projects.jpeg",
+            "text_a": "
+            Project Description:   Artisan's Hideout Restaurant, a hidden gem celebrated for its eclectic charm, aimed to offer patrons a dining experience unlike any other. Our team collaborated closely with the client to create custom furniture, unique décor elements, and personalized finishes that reflected the restaurant's distinctive identity. From handcrafted tables to bespoke wall murals, every detail was meticulously crafted to infuse the space with character and charm.
+            ",
+            "text_b": "
+            Artisanal Craftsmanship:   Engaging local artisans and craftsmen imbued the restaurant with a sense of authenticity and heritage, celebrating the community's rich cultural tapestry. Employing reclaimed materials and upcycled furnishings contributed to the restaurant's sustainable ethos, aligning
+            ",
+            "text_c": "hidden"
+          }
+        </include>
+
+        <include src="./html/home/_request.html"></include>
+      </div>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

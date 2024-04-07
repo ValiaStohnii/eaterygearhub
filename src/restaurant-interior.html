@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Portfolio"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "portfolio"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/portfolio/_article.html">
+          {
+            "title": "Restaurant Interior: Gastronome's Haven Bistro",
+            "text": "A Culinary Odyssey Awaits: Redefining dining with an immersive gastronomic journey.",
+            "image": "restaurant-interior.jpeg",
+            "text_a": "
+            Project Description:   Gastronome's Haven Bistro, a culinary destination renowned for its inventive cuisine, aimed to enchant diners with a multisensory dining experience. Our team designed an elegant interior with a blend of refined aesthetics and understated luxury. From plush banquettes to artisanal tableware, every detail was carefully selected to elevate the dining experience and evoke a sense of culinary indulgence.
+            ",
+            "text_b": "
+            Innovative Design Concepts:   Incorporating adjustable lighting fixtures allowed for seamless transitions between day and evening dining, enhancing the restaurant's ambiance and versatility. Introducing live cooking stations provided diners with an interactive culinary experience, engaging their senses and fostering a deeper connection with the cuisine.
+            ",
+            "text_c": "
+            Client Testimonial:   'Gastronome's Haven Bistro has become our go-to spot for memorable dining experiences. Eatery Gear Hub's expertise and creativity transformed our vision into a reality, delivering a space that delights both our guests and our culinary team.' - Emma, Bistro Owner
+            "
+          }
+        </include>
+
+        <include src="./html/home/_request.html"></include>
+      </div>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

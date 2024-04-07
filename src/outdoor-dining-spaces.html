@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Portfolio"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "portfolio"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/portfolio/_article.html">
+          {
+            "title": "Outdoor Dining Spaces: Verdant Vista Terrace",
+            "text": "Dine Amidst Nature's Embrace: Creating an alfresco retreat for culinary escapades.",
+            "image": "outdoor-dining.jpeg",
+            "text_a": "
+            Project Description:   Verdant Vista Terrace, a picturesque dining locale nestled amidst verdant landscapes, sought to create a tranquil oasis for outdoor dining enthusiasts. Our team transformed the space with stylish furniture, ambient lighting, and lush greenery to evoke a sense of natural beauty and relaxation. From intimate seating nooks to panoramic views, every element was orchestrated to harmonize with the surroundings and create an enchanting alfresco dining experience.
+            ",
+            "text_b": "
+            Sustainable Solutions:   Incorporating eco-friendly materials and energy-efficient lighting minimized the terrace's environmental footprint while creating a sustainable dining environment in harmony with nature. Utilizing natural shading solutions ensured optimal comfort for guests, shielding them from the elements without obstructing the breathtaking views.
+            ",
+            "text_c": "
+            Client Testimonial:   'Verdant Vista Terrace exceeded our expectations, providing a serene escape amidst the bustling city. Thanks to Eatery Gear Hub's innovative designs, we've created an outdoor dining experience that seamlessly integrates with nature.' - David, Restaurant Owner
+            "
+          }
+        </include>
+
+        <include src="./html/home/_request.html"></include>
+      </div>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>
