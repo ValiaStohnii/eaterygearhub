@@ -22,6 +22,12 @@ const swiperTeam = new Swiper('.crafting-slider', {
     650: {
       slidesPerView: 2,
     },
+    611: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 1,
+    }
   },
 });
 

@@ -125,4 +125,27 @@
       }
     }
   }
+
+  @include media(tablet) {
+    .tab {
+      &__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    padding: 30px 0;
+
+    .tabs {
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      &__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }

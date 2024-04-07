@@ -74,6 +74,9 @@
         margin-bottom: 44px;
         text-align: justify;
         text-indent: 30px;
+        @include media(mobile-l) {
+          font-size: 18px;
+        }
       }
     
       .btn {
@@ -129,15 +132,18 @@
 
     &__inner {
       min-height: 526px;
+      padding: 10px 0;
+    }
+
+    &__content {
+      max-width: 440px;
+      max-height: unset;
+      padding: 30px;
     }
 
     &__container {
       padding: 40px 0;
       flex-direction: column;
-    }
-
-    &__content {
-      margin-bottom: 32px;
     }
 
     img {
@@ -146,8 +152,14 @@
   }
 
   @include media(mobile-l) {
+    .container {
+      padding-top: 10px;
+    }
+
     &__inner {
       min-height: 500px;
+      padding: 60px 10px;
+      background-size: cover;
     }
 
     h1 {
@@ -156,11 +168,14 @@
     }
 
     p {
+      font-size: 18px;
       margin-bottom: 20px;
     }
+  }
 
-    &__content {
-      max-width: 94%;
+  @include media(mobile-s) {
+    &__inner {
+      padding: 30px 10px;
     }
   }
 }

@@ -96,4 +96,23 @@
       margin: 0 0 20px;
     }
   }
+
+  @include media(mobile-l) {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      max-width: unset;
+      margin-right: 0;
+      
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__inner {
+      min-height: 301px;
+    }
+  }
 }

@@ -23,7 +23,7 @@
       padding-top: calc(var(--header-height) * 1.5);
       width: 100%;
       height: calc(var(--vh));
-      background-color: var(--color-pink);
+      background-color: var(--color-pink-100);
       transform: translateX(150%);
       transition-property: transform;
       transition-duration: 0.4s;
@@ -80,7 +80,6 @@
     }
 
     @include media(tablet) {
-      font-size: 12px;
       letter-spacing: 0;
     }
   }

@@ -101,6 +101,14 @@
   @include media(tablet) {
     padding: 30px 0;
 
+    .container {
+      padding: 0;
+    }
+
+    &__inner {
+      min-height: 350px;
+    }
+
     &__grid {
       grid-template-columns: 1fr;
     }

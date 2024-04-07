@@ -116,4 +116,10 @@
       margin-bottom: 20px;
     }
   }
+
+  @include media(mobile-l) {
+    .container {
+      flex-direction: column;
+    }
+  }
 }

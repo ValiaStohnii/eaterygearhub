@@ -102,4 +102,32 @@
     margin-bottom: 51px;
     letter-spacing: -0.8px;
   }
+
+  @include media(tablet-wide) {
+    &__container {
+      margin-right: 20px;
+    }
+  }
+
+  @include media(tablet) {
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  @include media(mobile-s) {
+    &__content {
+      span {
+        font-size: 24px;
+      }
+
+      &--center {
+        padding: 0 20px;
+      }
+    }
+  }
 }
